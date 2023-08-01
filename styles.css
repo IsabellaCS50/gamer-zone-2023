@@ -1,15 +1,64 @@
 /* Global Styles */
 *{
     font-family: 'Work Sans', sans-serif;
-    margin: 0;
 }
+
+.purple-btn{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-style: none;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+/* body{
+    margin: 0;
+} */
+
+/* navbar styles */
+
+.navbar-container{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.pink-text{
+    color: #FF42A5;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
 .menu-text{
     color: #3C354F;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
-/* navbar styles */
 button{
     display: flex;
     gap: 10px;
@@ -20,74 +69,27 @@ button{
     background: rgba(11, 2, 35, 0.10);
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    width: 1920px;
-    height: 130px;
-    flex-shrink: 0;
-}
-
-nav >ul{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    align-items: center;
-    padding: 30px 240px 30px 0px;
-}
-
-.logo{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 2.8rem;
-    padding: 30px 0px 30px 240px;
-}
-
-.logo-img{
-    width: 86.041px;
-    height: 40px;
-}
-.pink-text{
-    color: #FF42A5;
-}
 
 /* banner styles */
 
 .banner-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
-}
-
-.banner-content{
-    background-image: url('./images/Group\ 14.png');
+    /* background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 50px 100px ;
-    width: 800px;
-    height: 700px;
+    background-position: top left; */
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
 }
 
 .banner-title{
     color: #0B0223;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 600;
-}
-
-.banner-ul{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding-top: 10px;
-}
-.banner-btn{
-    display: flex;
-    gap: 20px;
-    padding-top: 20px;
+    margin: 0;
+    padding-left: 5px;
 }
 
 .gradient-text{
@@ -97,11 +99,191 @@ nav >ul{
     -webkit-text-fill-color: transparent;
     font-size: 6rem;
     padding-bottom: 10px;
+    margin: 0;
 }
 
+.banner-ul{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.banner-btn{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
 
-@media screen and (max-width:576px) {
-    nav, nav >ul{
+.skyblue-btn{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-style: none;
+    border-radius: 48px;
+    background: #4EC5F7;
+}
+
+/* .hide{
+    visibility: hidden;
+} */
+
+/* Main section styles - We are Gamer */
+
+.we-are-gamer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.gamer-title{
+    /* text-align: right; */
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-paragraph1{
+    color: #534C64;
+    /* text-align: right; */
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #534C64;
+    line-height: 1.9rem;
+}
+
+.gamer-btn{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.gamer-paragraph2{
+    color: #534C64;
+    /* text-align: right; */
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+.unleash{
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+}
+.gamer-content{
+    text-align: right;
+    width: max-content;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .nav-items, .menu{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #0B0223; */
+    }
+
+    .menu-text{
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar-container{
+        background: none;
+        box-shadow: none;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .banner-img{
+        width: 400px;
+        height: 400px;
+    }
+   
+    .banner-title{
+        font-size: 1rem;
+    }
+    .gradient-text{
+        font-size: 2rem;
+    }
+    .skyblue-btn{
+        font-size: .6rem;
+        padding: 10px 20px;
+    }
+    .purple-btn{
+        font-size: .6rem;
+        padding: 10px 20px;
+    }
+
+    .banner-ul{
+        font-size: .6rem;
+    }
+
+    .banner-content{
+        background-image: url('./images/Group\ 14.png');
+        background-size: contain;
+        padding: 70px 100px 110px 100px;
+    }
+
+    .we-are-gamer-container{
+        flex-direction: column;
+        align-items: center;
+        background: none;
+    }
+    .gamer-img{
+        width: 600px;
+        height: 400px;
+    }
+    .gamer-content{
+        text-align: center;
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 820px) {
+    .nav-items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #0B0223; */
+    }
+    .navbar-container{
+        background: none;
+        box-shadow: none;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .menu-text{
+        font-size: .8rem;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    button{
+        padding: 1.2vw;
+        font-size: .5rem;
     }
 }
