@@ -188,6 +188,31 @@ button{
     width: max-content;
 }
 
+/* Online Games section styles */
+.online-games-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 3vw;
+}
+.games-items-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.games-items{
+    width: min-content;
+}
+.active-game{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50% / cover no-repeat;
+}
 @media screen and (max-width: 576px) {
     
     .nav-items, .menu{
